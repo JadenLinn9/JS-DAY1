@@ -1,4 +1,4 @@
-<script>
+<script>  //全等比對,包含型別
     let a = 10;
     switch(a){
         case 1:
@@ -7,12 +7,15 @@
         case 10:
             document.write("B");
             break;
-        case 100:
+        case a + 2:  //變數也可以用於計算
             document.write("C");
             break;
+        case 10:
+            document.write("D");
+            break;   //重複可以但會印出前面的
         default:
             document.write("Z");
-            break;
+            break;   //可以沒有break,不會終結
     }
 
     document.write("<hr>end");
