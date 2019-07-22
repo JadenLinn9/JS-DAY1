@@ -2,10 +2,14 @@
     let a = 10;b = 3;
     if(a-- >= 10 || b++ <= 3){  //先判斷a,b但會印出a--,b++;
                                 //以boolean判斷為優先,不會執行其他動作 
+                                //若(a-- >= 10 | b++ <= 3),就算前面已經判讀還是會讀後面
                                 
         document.write(`OK : a = ${a}; b = ${b}`);
     }else{
         document.write(`XX : a = ${a};b = ${b}`);
     }
-   
+
+    document.write("<hr>");
+    let c = 2,d = 3;
+    document.write(c d);  //XOR,二進位運算
 </script>
