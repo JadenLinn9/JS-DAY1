@@ -1,10 +1,7 @@
 <script>
-let month = (Math.random() * 12) + 1;
-month = parseInt(month);
+let month = parseInt(Math.random()*12+1);
 
-document.write(month);
-
-let days = 9;
+let days = -1;
 switch(month){
     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
         days = 31;
@@ -14,6 +11,7 @@ switch(month){
         break;
     case 4: case 6: case 9: case 11:
         days = 30;
+        break;
     default:
         days = 0;
         break;

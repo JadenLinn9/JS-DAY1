@@ -2,20 +2,25 @@
 </script>
 
 <table border="1" width="100%">
-    <tr>
-       
             <script>
-            for (let j =2;j <=5; j++){
+            const ROW = 4;
+            const START = 2;
+            const COL = 4;
+
+            for(let k=0;k<ROW;k++){
+            document.write("<tr>");
+            for (let j =START;j < (START+COL); j++){
+                let newJ = j + k * COL;
                 document.write("<td>");
                 for (let i=1;i<=9;i++){
-                    let r = j * i;
-                    document.write(`${j} X ${i} = ${r}<br>`);
+                    let r = newJ * i;
+                    document.write(`${newJ} X ${i} = ${r}<br>`);
                 }
                 document.write("</td>");
             }
-            
+            document.write("</tr>");
+            }
             </script>
-        
-    </tr>
+
 
 </table>
