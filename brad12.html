@@ -1,6 +1,8 @@
 <script>
     let a = 10;b = 3;
-    if(a-- >= 10 && b++ <= 3){  //先判斷a,b但會印出a--,b++
+    if(a-- >= 10 || b++ <= 3){  //先判斷a,b但會印出a--,b++;
+                                //以boolean判斷為優先,不會執行其他動作 
+                                
         document.write(`OK : a = ${a}; b = ${b}`);
     }else{
         document.write(`XX : a = ${a};b = ${b}`);
